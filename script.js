@@ -35,10 +35,10 @@ function compute()
 		yearlyInterest = principal * (rate/100);
 		totalInterest = yearlyInterest * years;
 		formattedYears = new Date().getFullYear() + Number(years);
-		output = 'If you deposit '+principal+',<br/>';
-		output += 'at an interest of '+rate+'%.<br/>';
-		output += 'You will recieve an amount of ' +totalInterest+',<br/>';
-		output += 'in the year '+formattedYears; 
+		output = 'If you deposit <mark>'+principal+'</mark>,<br/>';
+		output += 'at an interest of <mark>'+rate+'</mark>%.<br/>';
+		output += 'You will recieve an amount of <mark>' +totalInterest+'</mark>,<br/>';
+		output += 'in the year <mark>'+formattedYears+'<mark>'; 
 	
 
 		resultContainer.innerHTML = output;
