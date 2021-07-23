@@ -24,7 +24,10 @@ function compute()
 	
 	if(isNaN(principal)){
 		alert('Please input numbers only');
-	}
+    }
+    else if(principal<= 0){
+        alert('Please Input Positive Number');
+    }
 	else{
 		yearlyInterest = principal * (rate/100);
 		totalInterest = yearlyInterest * years;
