@@ -1,4 +1,40 @@
-body {background-color:tan;}
-h1{color:green;}
+body {
+    background-color:black;
+    color: black;
+	font-family: 'Arial';
+    }
+#container{
+    background: white;
+    border-radius: 27px;
+    margin: 20px auto 20px auto;
+    padding: 19px;
+    width:400px;
+}
+
+#calc-body{
+    width:80%;
+	margin:auto;
+}
+
+header h1{
+    color: grey;
+}
+
+
+.input-control{
+	display:flex;
+	margin-bottom: 10px;
+}
+
+.input-label{
+	flex: 0 0 35%;
+}
+
+.input-item{
+	flex: 0;
+	display:flex;
+	
+}
+
 
 
