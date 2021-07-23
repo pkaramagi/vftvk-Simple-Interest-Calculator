@@ -18,15 +18,18 @@ function compute()
 {
 	var output;
 	var rate = document.getElementById("rate").value;
-	var principal= document.getElementById("principal").value;
+    var principalContainer= document.getElementById("principal");
+    var principal = principalContainer.value;
 	var years = document.getElementById("years").value;
 	var resultContainer = document.getElementById("result");
 	
 	if(isNaN(principal)){
-		alert('Please input numbers only');
+        alert('Please input numbers only');
+        principalContainer.focus();
     }
     else if(principal<= 0){
         alert('Please Input Positive Number');
+        principalContainer.focus();
     }
 	else{
 		yearlyInterest = principal * (rate/100);
